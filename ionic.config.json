@@ -1,0 +1,7 @@
+{
+  "name": "IonicMercedesBenz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
