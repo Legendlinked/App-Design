@@ -1,9 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <!-- Hamburger Icon -->
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    <div class="logo-container">
+      <img src="../../assets/icon/mercvip.png" alt="Logo" width="50" height="50">
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -16,12 +18,12 @@
 
   <ion-content>
     <!-- Your menu content goes here -->
-    <ion-list>
-      <ion-item>Menu Item 1</ion-item>
-      <ion-item>Menu Item 2</ion-item>
-      <ion-item>Menu Item 3</ion-item>
+    <div class="menu-items">
+      <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(1)">Menu Item 1</ion-button >
+      <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(2)">Menu Item 2</ion-button >
+      <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(3)">Menu Item 3</ion-button >
       <!-- Add more menu items as needed -->
-    </ion-list>
+    </div>
   </ion-content>
 </ion-menu>
 

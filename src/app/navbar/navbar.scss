@@ -1,0 +1,26 @@
+ion-header {
+    ion-toolbar {
+        --background: transparent;
+        backdrop-filter: blur(25px);
+        display: flex;
+        justify-content: flex-start;
+
+        ion-buttons[slot="start"] {
+            position: absolute;
+        }
+
+        .logo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+}
+

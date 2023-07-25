@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Navbar } from '../navbar/navbar';
 
 @Component({
@@ -6,8 +6,26 @@ import { Navbar } from '../navbar/navbar';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  ngOnInit() {
+    this.playVideo();
+  }
+  
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    this.playVideo();
+  }
+
+  playVideo() {
+    const video: any = document.querySelector('.video-background video');
+    if (video && video.paused) {
+      video.muted = true;
+      video.autoplay = true;
+      video.playsinline = true;
+      video.play();
+    }
+  }
+  constructor() { }
 
 }

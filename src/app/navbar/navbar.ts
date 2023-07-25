@@ -11,4 +11,8 @@ export class Navbar implements OnInit {
 
   ngOnInit() {}
 
+  menuItemClicked(item:number){
+    
+  }
+
 }
