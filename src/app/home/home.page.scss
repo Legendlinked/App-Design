@@ -40,3 +40,16 @@ ion-content {
   height: 100%;
   object-fit: cover;
 }
+
+.logo {
+  scale: 60%;
+  transform: translateY(50%);
+}
+
+#imgBox {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
