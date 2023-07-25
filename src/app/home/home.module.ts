@@ -13,7 +13,7 @@ import { Navbar } from '../navbar/navbar';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
   declarations: [HomePage, Navbar]
 })
