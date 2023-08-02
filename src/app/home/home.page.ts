@@ -10,6 +10,7 @@ export class HomePage implements OnInit {
     //Innit:
     vedioSection: any;
     startY = 0;
+    scrollAnimationTriggered = false;
 
   ngOnInit() {
     this.playVideo();
@@ -32,8 +33,6 @@ export class HomePage implements OnInit {
     }
   }
 
-  public scrollAnimationTriggered = false;
-
   constructor() {
     this.alwaysloop();
   }
@@ -55,14 +54,10 @@ export class HomePage implements OnInit {
   }
 
   async alwaysloop() {
-
-
     await setTimeout(() => {
       this.alwaysloop();
     }, 1000);
   }
-
-
 
 
 
