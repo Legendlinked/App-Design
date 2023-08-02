@@ -9,6 +9,12 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     this.playVideo();
+    setTimeout(() => {
+      const scrollTargetElement = document.getElementById('here');
+      if (scrollTargetElement) {
+        scrollTargetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 5000); // 5000 milliseconds = 5 seconds
   }
 
   playVideo() {

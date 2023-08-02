@@ -25,6 +25,11 @@ ion-content {
   right: 0;
   flex: 1;
   display: flex;
+  animation: Intro 2s ease-in-out;
+}
+
+#introText{
+  animation: Intro 2s ease-in-out;
 }
 
 .imgShadow {
@@ -79,7 +84,7 @@ section {
   flex: 1;
   display: flex;
   text-shadow: 0px 0px 10px rgb(219, 219, 219);
-  //animation: popAnimation .7s ease-in-out infinite alternate;
+  animation: popAnimation .7s ease-in-out infinite alternate;
   background: linear-gradient(
     90deg,
     #c0c0c0,
@@ -92,8 +97,13 @@ section {
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.199);
 }
 
-#title:hover{
-  animation: popAnimation .7s ease-in-out infinite alternate;
+@keyframes Intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 @keyframes popAnimation {
