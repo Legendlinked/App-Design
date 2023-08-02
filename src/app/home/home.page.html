@@ -1,10 +1,36 @@
 <app-navbar></app-navbar>
 
-<ion-content [fullscreen]="true">
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <div class="video-background">
     <video id="video-id" loop muted autoplay playsinline preload="auto">
       <source src="assets/videos/videoo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+  </div>
+  <div>
+    <div id="imgBox">
+      <img
+        src="../../assets/icon/merclogospinner.png"
+        alt="Logo"
+        width="80%"
+        height="80%"
+        class="imgShadow"
+      />
+    </div>
+    <ion-text>
+      <h1 id="title">
+        Mercedez-Benz <br />
+        South Orlando VIP
+      </h1>
+    </ion-text>
+    <section class="yellow">
+      <ion-text
+        [ngClass]="{ 'scroll-text': true, 'appear': scrollAnimationTriggered }"
+      >
+        <p class="thanks">
+          Thank you for being a valued member at our establishment
+        </p>
+      </ion-text>
+    </section>
   </div>
 </ion-content>

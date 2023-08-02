@@ -1,5 +1,4 @@
-import { Component, HostListener, OnInit, ViewChild} from '@angular/core';
-import { Navbar } from '../navbar/navbar';
+import { Component, OnInit, ElementRef, Renderer2, HostListener, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +8,6 @@ import { Navbar } from '../navbar/navbar';
 export class HomePage implements OnInit {
 
   ngOnInit() {
-    this.playVideo();
-  }
-  
-  @HostListener('document:click', ['$event'])
-  onDocumentClick(event: Event) {
     this.playVideo();
   }
 
@@ -27,8 +21,23 @@ export class HomePage implements OnInit {
     }
   }
 
+  public scrollAnimationTriggered = false;
+
   constructor() {}
 
- 
-  
+  onScroll(event: any) {
+    if (!this.scrollAnimationTriggered) {
+      const element = document.querySelector('.scroll-text');
+      console.log(this.scrollAnimationTriggered)
+      if (element instanceof HTMLElement) {
+        const elementOffset = element.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (elementOffset < screenHeight * 0.75) {
+          this.scrollAnimationTriggered = true;
+        }
+      }
+    }
+    console.log(this.scrollAnimationTriggered)
+  }
 }
