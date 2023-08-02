@@ -7,8 +7,13 @@ import { Component, OnInit, ElementRef, Renderer2, HostListener, ViewChild} from
 })
 export class HomePage implements OnInit {
 
+    //Innit:
+    vedioSection: any;
+    startY = 0;
+
   ngOnInit() {
     this.playVideo();
+    this.vedioSection = document.getElementById('video-background');
     setTimeout(() => {
       const scrollTargetElement = document.getElementById('here');
       if (scrollTargetElement) {
@@ -29,7 +34,9 @@ export class HomePage implements OnInit {
 
   public scrollAnimationTriggered = false;
 
-  constructor() {}
+  constructor() {
+    this.alwaysloop();
+  }
 
   onScroll(event: any) {
     if (!this.scrollAnimationTriggered) {
@@ -46,4 +53,30 @@ export class HomePage implements OnInit {
     }
     console.log(this.scrollAnimationTriggered)
   }
+
+  async alwaysloop() {
+
+
+    await setTimeout(() => {
+      this.alwaysloop();
+    }, 1000);
+  }
+
+
+
+
+
+  //Mouse Scroll Wheel
+  @HostListener("wheel", ["$event"])
+  scrolling(event: WheelEvent) {
+    console.log("you are scrolling");
+  }
+  @HostListener('touchmove', ['$event'])
+  moving(event: WheelEvent) {
+    if (this.vedioSection) {
+      console.log("you are moving");
+    }
+
+  }
+
 }
