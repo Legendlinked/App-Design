@@ -40,7 +40,7 @@ ion-content {
 
 section {
   box-shadow: 0px 0px 15px rgb(0, 0, 0);
-  height: 93vh;
+  height: 91.5vh;
   transform: translateY(46%);
   justify-content: center;
   padding-left: 10px;
@@ -48,8 +48,8 @@ section {
 }
 
 .yellow {
-  background: linear-gradient(180deg, #c0c0c075, #eae8ee75, #c0c0c075);
-  backdrop-filter: blur(25px);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
 }
 
 .scroll-text {
@@ -65,16 +65,32 @@ section {
   transform: translateY(0);
 }
 
-.thanks{
+.thanksTitle{
   justify-content: center;
-  font-family: MercedezFont;
   font-size: 50px;
   text-align: center;
+  font-family: 'Precious', sans-serif;
+  color: #f6f3a6;
+  -webkit-text-stroke: 0.2px rgba(143, 143, 143, 0.397);
+  text-shadow: 0px 0px 10px rgb(237, 255, 74);
 }
+
+.thanksBody{
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-family: 'MercedezFont';
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
 
 #title {
   justify-content: center;
-  font-family: MercedezFont;
+  font-family: 'MercedezFont';
   font-size: 30px;
   text-align: center;
   font-weight: 1000;
@@ -94,7 +110,7 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.199);
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0.199);
 }
 
 @keyframes Intro {

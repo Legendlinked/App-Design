@@ -1,0 +1,9 @@
+/* src/assets/fonts/fonts.css */
+@font-face {
+    font-family: 'Precious';
+    src: url(src\fonts\precious.ttf) format('truetype');;
+}
+@font-face {
+    font-family: 'MercedezFont';
+    src: url(src\fonts\merc.ttf);
+}
