@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CertifcateComponent } from './certifcate.component';
+import { CertificateComponent } from './certificate.component';
 
 describe('CertifcateComponent', () => {
-  let component: CertifcateComponent;
-  let fixture: ComponentFixture<CertifcateComponent>;
+  let component: CertificateComponent;
+  let fixture: ComponentFixture<CertificateComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CertifcateComponent ],
+      declarations: [ CertificateComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CertifcateComponent);
+    fixture = TestBed.createComponent(CertificateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

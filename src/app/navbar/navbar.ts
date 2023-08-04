@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { CertificateComponent } from '../certifcate/certificate.component';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,12 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Navbar implements OnInit {
 
-  constructor() { }
-
+  constructor(private navCtrl: NavController) {}
+  
   ngOnInit() {}
 
   menuItemClicked(item:number){
-    
+    if (item==1) {
+      this.navCtrl.navigateForward('/certificate'); // Replace with the actual path to MyNewPage
+    }
   }
 
 }

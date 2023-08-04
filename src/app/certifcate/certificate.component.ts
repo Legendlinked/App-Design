@@ -1,12 +1,13 @@
 import { Component, OnInit, ElementRef, Renderer2, HostListener, ViewChild} from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { CertificateModule } from './certificate.module';
 
 @Component({
-  selector: 'app-certifcate',
-  templateUrl: './certifcate.component.html',
-  styleUrls: ['./certifcate.component.scss'],
+  selector: 'app-certificate',
+  templateUrl: './certificate.component.html',
+  styleUrls: ['./certificate.component.scss'],
 })
-export class CertifcateComponent  implements OnInit {
+export class CertificateComponent  implements OnInit {
 
   scrollAnimationTriggered = false;
 

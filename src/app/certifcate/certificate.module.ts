@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
-import { CertifcateComponent } from './certifcate.component';
+import { CertificateComponent } from './certificate.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-  ],
-  declarations: [CertifcateComponent]
+  declarations: [CertificateComponent],
+  imports: [IonicModule], // Add IonicModule here
+  exports: [CertificateComponent],
 })
-export class HomePageModule {}
+export class CertificateModule {}
