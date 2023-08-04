@@ -59,6 +59,10 @@ export class HomePage implements OnInit {
     }, 1000);
   }
 
+  menuItemClicked(item:number){
+    
+  }
+
 
 
   //Mouse Scroll Wheel

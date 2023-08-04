@@ -27,16 +27,25 @@
       <ion-text
         [ngClass]="{ 'scroll-text': true, 'appear': scrollAnimationTriggered }"
       >
-        <h1 class="thanksTitle">Thank You . . .</h1>
-        <p class="thanksBody">
-          For being a valuable member at Mercedez-Benz South Orlando. We truly
-          appreciate your trust in our abilities to provide you with the
-          state-of-the-art vehicles for the top-of-the-line people such as
-          yourselves. As a courtesy, Mercedez-Benz of South Orlando has worked on developing
-          an app that allows you to easily access and manage your account information,
-          update you on any V.I.P Events and specials happenings, and ease of access to all
-          of the member services we provide.
-        </p>
+        <h1 class="thanksTitle">Home</h1>
+        <div class="bttnDisplay">
+          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(1)"
+            >Schedule Service</ion-button
+          >
+          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(2)"
+            >Point Balance & <br> Account History</ion-button
+          >
+          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(3)"
+            >Rewards</ion-button
+          >
+          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(4)"
+            >Certificate</ion-button
+          >
+          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(6)"
+            >Member Center</ion-button
+          >
+          <!-- Add more menu items as needed -->
+        </div>
       </ion-text>
     </section>
   </div>
