@@ -1,0 +1,14 @@
+ion-content {
+    --padding-top: 0;
+}
+
+#imgBox {
+    justify-content: center;
+    transform: translateY(40%);
+    left: 0;
+    right: 0;
+    flex: 1;
+    display: flex;
+    animation: Intro 2s ease-in-out;
+}
+  

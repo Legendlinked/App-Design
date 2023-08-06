@@ -1,4 +1,6 @@
 import { Component, OnInit, ElementRef, Renderer2, HostListener, ViewChild} from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { HomePageModule } from './home.module';
 
 @Component({
   selector: 'app-home',
