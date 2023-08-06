@@ -1,6 +1,7 @@
-ion-content {
-    --padding-top: 0;
-}
+ion-content.splash-screen {
+    /* Disable touch events */
+    touch-action: none;
+  }
 
 #imgBox {
     justify-content: center;
