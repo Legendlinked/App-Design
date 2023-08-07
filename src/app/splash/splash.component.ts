@@ -12,9 +12,9 @@ export class SplashComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    // Wait for 5 seconds and then navigate to the home page
+    // Wait for 5 seconds and then navigate to the home page  
     setTimeout(() => {
       this.router.navigate(['home']);
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 2000); // 5000 milliseconds = 5 seconds
   }
 }

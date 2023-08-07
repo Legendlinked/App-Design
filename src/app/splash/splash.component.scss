@@ -1,15 +1,389 @@
-ion-content.splash-screen {
-    /* Disable touch events */
-    touch-action: none;
-  }
+.splash-screen {
+  /* Disable touch events */
+  background: linear-gradient(#99ca45, #ffffff, #ffffff, #99ca45);
+  height: 100%;
+  animation: Splash 0.6s ease-in-out;
+  position: absolute;
+}
 
 #imgBox {
-    justify-content: center;
-    transform: translateY(40%);
-    left: 0;
-    right: 0;
-    flex: 1;
-    display: flex;
-    animation: Intro 2s ease-in-out;
+  justify-content: center;
+  margin-top: 95%;
+  left: 0;
+  right: 0;
+  flex: 1;
+  display: flex;
+  transform-origin: center;
+  animation: RollingOs 0.7s;
 }
-  
+
+@keyframes RollingOs {
+  0% {
+    transform: rotate(0deg) scale(0%);
+    opacity: 0%;
+  }
+  100% {
+    transform: rotate(360deg) scale(100%);
+    opacity: 100%;
+  }
+}
+
+@keyframes Splash {
+  0% {
+    background: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff);
+  }
+  5% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  10% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  20% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  25% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  30% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  35% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  40% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  45% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  50% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  55% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  60% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  65% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  70% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  75% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  80% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  85% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  90% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  95% {
+    background: linear-gradient(
+      #99ca45,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #99ca45
+    );
+  }
+  100% {
+    background: linear-gradient(#99ca45, #ffffff, #ffffff, #99ca45);
+  }
+}

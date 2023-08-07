@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef, Renderer2, HostListener, ViewChild} from '@angular/core';
-import { IonicModule } from '@ionic/angular';
-import { HomePageModule } from './home.module';
+import { Platform, IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +8,10 @@ import { HomePageModule } from './home.module';
 })
 export class HomePage implements OnInit {
 
-    //Innit:
-    vedioSection: any;
-    startY = 0;
-    scrollAnimationTriggered = false;
+  //Innit:
+  vedioSection: any;
+  startY = 0;
+  scrollAnimationTriggered = false;
 
   ngOnInit() {
     this.playVideo();
@@ -35,8 +34,22 @@ export class HomePage implements OnInit {
     }
   }
 
-  constructor() {
+  constructor(private platform: Platform, private routerOutlet: IonRouterOutlet) {
     this.alwaysloop();
+  }
+
+  handleSwipe(event: any) {
+    // Prevent swipe-to-go-back gesture
+    event.preventDefault();
+  }
+
+  ionViewDidEnter() {
+    this.platform.backButton.subscribeWithPriority(0, () => {});
+    this.routerOutlet.swipeGesture = false;
+  }
+
+  ionViewDidLeave() {
+    this.routerOutlet.swipeGesture = true;
   }
 
   onScroll(event: any) {

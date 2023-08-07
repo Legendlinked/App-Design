@@ -3,30 +3,31 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CertificateComponent } from './certifcate/certificate.component';
 import { SplashComponent } from './splash/splash.component';
-import { HomePage } from './home/home.page';
 
 const routes: Routes = [
-  { 
-    path: '',
-    redirectTo: 'splash',
-    pathMatch: 'full' },
-  { 
-    path: 'splash',
-    component: SplashComponent },
   {
     path: 'home',
-    component: HomePage,
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  { 
+    path: 'splash',
+    component: SplashComponent,
   },
   {
     path: 'certificate', // Replace with the desired path
     component: CertificateComponent,
   },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

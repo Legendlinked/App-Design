@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+// app.component.ts
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    // Manually navigate to the SplashComponent
     this.router.navigate(['splash']);
   }
 }
