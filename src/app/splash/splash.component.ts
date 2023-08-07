@@ -15,6 +15,6 @@ export class SplashComponent implements OnInit {
     // Wait for 5 seconds and then navigate to the home page  
     setTimeout(() => {
       this.router.navigate(['home']);
-    }, 2000); // 5000 milliseconds = 5 seconds
+    }, 2500); // 5000 milliseconds = 5 seconds
   }
 }

@@ -8,7 +8,7 @@
 
 #imgBox {
   justify-content: center;
-  margin-top: 95%;
+  margin-top: 93%;
   left: 0;
   right: 0;
   flex: 1;
@@ -16,6 +16,33 @@
   transform-origin: center;
   animation: RollingOs 0.7s;
 }
+
+#green-line-top {
+    width: 0%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin-left: 5%;
+    background: #99ca45;
+    animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
+    animation-delay: 0.7s;
+    position: absolute;
+    margin-top: 93%;
+    animation-fill-mode: forwards;
+} 
+
+#green-line-bttm {
+    width: 0%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin-left: 5%;
+    background: #99ca45;
+    animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+} 
+
 
 @keyframes RollingOs {
   0% {
@@ -26,6 +53,15 @@
     transform: rotate(360deg) scale(100%);
     opacity: 100%;
   }
+}
+
+@keyframes lineAnimation {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 91%; /* Set the desired width when the animation completes */
+    }
 }
 
 @keyframes Splash {
@@ -375,13 +411,7 @@
     );
   }
   95% {
-    background: linear-gradient(
-      #99ca45,
-      #ffffff,
-      #ffffff,
-      #ffffff,
-      #99ca45
-    );
+    background: linear-gradient(#99ca45, #ffffff, #ffffff, #ffffff, #99ca45);
   }
   100% {
     background: linear-gradient(#99ca45, #ffffff, #ffffff, #99ca45);
