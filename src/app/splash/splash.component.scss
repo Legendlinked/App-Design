@@ -14,7 +14,10 @@
   flex: 1;
   display: flex;
   transform-origin: center;
-  animation: RollingOs 0.7s;
+  animation: RollingOs 0.6s;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 #green-line-top {
@@ -25,7 +28,7 @@
   margin-left: 5%;
   background: #99ca45;
   animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
-  animation-delay: 0.7s;
+  animation-delay: 1.2s;
   position: absolute;
   margin-top: 93%;
   animation-fill-mode: forwards;
@@ -39,7 +42,7 @@
   margin-left: 5%;
   background: #99ca45;
   animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
-  animation-delay: 0.7s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 } 
 
