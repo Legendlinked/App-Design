@@ -9,18 +9,18 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
-  { 
-    path: 'splash',
-    component: SplashComponent,
-  },
-  {
-    path: 'certificate', // Replace with the desired path
-    component: CertificateComponent,
-  },
+  // {
+  //   path: 'certificate', // Replace with the desired path
+  //   component: CertificateComponent,
+  // },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  { 
+    path: 'splash',
+    component: SplashComponent,
   },
 ];
 

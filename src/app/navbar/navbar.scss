@@ -4,7 +4,9 @@ ion-header {
     backdrop-filter: blur(25px);
     display: flex;
     justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    height: 75px;
 
     ion-buttons[slot="start"] {
       position: absolute;
@@ -16,6 +18,7 @@ ion-header {
       justify-content: center;
       padding-top: 15px;
       padding-bottom: 15px;
+      scale: 200%;
     }
 
     img {
@@ -23,6 +26,10 @@ ion-header {
       max-height: 50px;
     }
   }
+}
+
+ion-menu-button {
+  color:white;
 }
 
 .root {
@@ -52,4 +59,8 @@ ion-button {
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
   margin-bottom: 2.5%;
   color:white;
+}
+
+ion-content{
+  --background: transparent;
 }

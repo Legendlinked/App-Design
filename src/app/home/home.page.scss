@@ -39,17 +39,86 @@ ion-content {
 }
 
 section {
-  box-shadow: 0px 0px 15px rgb(0, 0, 0);
-  height: 91.5vh;
-  transform: translateY(46%);
+  //box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  margin-top: 47%;
+  height: 70vh;
+  width: 100%;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
+
 }
 
 .yellow {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(153, 202, 69, 0.6);
   backdrop-filter: blur(20px);
+}
+
+#circOne{
+  background: rgb(153, 202, 69);
+  box-shadow: 0px 0px 20px rgb(153, 202, 69);
+  border-radius: 50%;
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  margin-top: 40%;
+  margin-left: -30%;
+  animation: waveAnim 1s infinite alternate;
+}
+#circTwo{
+  background: rgb(153, 202, 69);
+  box-shadow: 0px 0px 20px rgb(153, 202, 69);
+  border-radius: 50%;
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  margin-top: 35%;
+  animation: waveAnim 1s infinite alternate;
+}
+#circTres{
+  background: rgb(153, 202, 69);
+  box-shadow: 0px 0px 20px rgb(153, 202, 69);
+  border-radius: 50%;
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  margin-top: 38%;
+  margin-left: 30%;
+  animation: waveAnim 1s infinite alternate;
+}
+#circQuatro{
+  background: rgb(153, 202, 69);
+  box-shadow: 0px 0px 20px rgb(153, 202, 69);
+  border-radius: 50%;
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  margin-top: 36%;
+  margin-left: 50%;
+  animation: waveAnim 1s infinite alternate;
+}
+#circCinco{
+  background: rgb(153, 202, 69);
+  box-shadow: 0px 0px 20px rgb(153, 202, 69);
+  border-radius: 50%;
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 70%;
+  animation: waveAnim 1s infinite alternate;
+}
+
+@keyframes waveAnim {
+  0% {
+    transform: scaleY(1.0);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+  100% {
+    transform: scaleY(1.0);
+  }
 }
 
 .scroll-text {
@@ -67,12 +136,14 @@ section {
 
 .thanksTitle{
   justify-content: center;
+  transform: translateY(50%);
   font-size: 50px;
   text-align: center;
-  font-family: 'Precious', sans-serif;
-  color: #f6f3a6;
-  -webkit-text-stroke: 0.2px rgba(143, 143, 143, 0.397);
-  text-shadow: 0px 0px 10px rgb(237, 255, 74);
+  font-family: 'OmniFont';
+  text-decoration: underline white;
+  color: #ffffff;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .thanksBody{
@@ -116,7 +187,7 @@ section {
 .bttnDisplay {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 ion-button {

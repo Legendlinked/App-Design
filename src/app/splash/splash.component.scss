@@ -18,29 +18,29 @@
 }
 
 #green-line-top {
-    width: 0%;
-    height: 3px;
-    left: 0;
-    right: 0;
-    margin-left: 5%;
-    background: #99ca45;
-    animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
-    animation-delay: 0.7s;
-    position: absolute;
-    margin-top: 93%;
-    animation-fill-mode: forwards;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin-left: 5%;
+  background: #99ca45;
+  animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
+  animation-delay: 0.7s;
+  position: absolute;
+  margin-top: 93%;
+  animation-fill-mode: forwards;
 } 
 
 #green-line-bttm {
-    width: 0%;
-    height: 3px;
-    left: 0;
-    right: 0;
-    margin-left: 5%;
-    background: #99ca45;
-    animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
-    animation-delay: 0.7s;
-    animation-fill-mode: forwards;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin-left: 5%;
+  background: #99ca45;
+  animation: lineAnimation 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
 } 
 
 
@@ -56,12 +56,12 @@
 }
 
 @keyframes lineAnimation {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 91%; /* Set the desired width when the animation completes */
-    }
+  0%{
+      width: 0%;
+  }
+  100% {
+      width: 91%; /* Set the desired width when the animation completes */
+  }
 }
 
 @keyframes Splash {

@@ -1,52 +1,36 @@
 <app-navbar></app-navbar>
 
-<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+<ion-content [scrollEvents]="true">
   <div class="video-background">
     <video id="video-id" loop muted autoplay playsinline preload="auto">
-      <source src="assets/videos/videoo.mp4" type="video/mp4" />
+      <source src="assets/videos/cartlapse.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
+  <div id="circOne"> 
+  </div>
+  <div id="circTwo">
+  </div>
+  <div id="circTres">
+  </div>
+  <div id="circQuatro">   
+  </div>
+  <div id="circCinco">   
+  </div>
   <div>
-    <div id="imgBox">
-      <img
-        src="../../assets/icon/merclogospinner.png"
-        alt="Logo"
-        width="80%"
-        height="80%"
-        class="imgShadow"
-      />
-    </div>
-    <ion-text id="introText">
-      <h1 id="title">
-        Mercedez-Benz <br />
-        South Orlando VIP
-      </h1>
-    </ion-text>
     <section class="yellow" id="here">
-      <ion-text
-        [ngClass]="{ 'scroll-text': true, 'appear': scrollAnimationTriggered }"
-      >
+      <ion-text class="scroll-text.appear">
         <h1 class="thanksTitle">Home Hub</h1>
         <div class="bttnDisplay">
           <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(1)"
-            >Schedule Service</ion-button
+            >Reservation</ion-button
           >
           <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(2)"
-            >Point Balance & <br> Account History</ion-button
-          >
-          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(3)"
-            >Rewards</ion-button
-          >
-          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(4)"
-            >Certificate</ion-button
-          >
-          <ion-button fill="clear" class="menu-item" (click)="menuItemClicked(6)"
-            >Member Center</ion-button
-          >
-          <!-- Add more menu items as needed -->
+            >Calendar</ion-button>
         </div>
       </ion-text>
     </section>
   </div>
 </ion-content>
+
+<!-- (ionScroll)="onScroll($event)" -->

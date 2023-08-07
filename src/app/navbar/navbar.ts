@@ -15,9 +15,9 @@ export class Navbar implements OnInit {
   ngOnInit() {}
 
   menuItemClicked(item:number){
-    if (item==1) {
-      this.navCtrl.navigateForward('/certificate'); // Replace with the actual path to MyNewPage
-    }
+    // if (item==1) {
+    //   this.navCtrl.navigateForward('/certificate'); // Replace with the actual path to MyNewPage
+    // }
   }
 
 }
